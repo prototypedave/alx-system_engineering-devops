@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#comfigures a brand new ubuntu machine
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo sed -i "11i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+echo "School" | sudo tee /usr/share/nginx/html/index.html
+sudo service nginx start
