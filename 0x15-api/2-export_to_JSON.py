@@ -22,6 +22,6 @@ if __name__ == '__main__':
         task_dict['username'] = username
         tasks.append(task_dict)
     jsonobj = {}
-    jsonobj[userid] = tasks
+    jsonobj[userId] = tasks
     with open("{}.json".format(userId), 'w') as jsonfile:
         json.dump(jsonobj, jsonfile)
