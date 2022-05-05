@@ -2,4 +2,4 @@
 #creates a RSA key pair
 #number of bits in the created RSA 4096
 
-ssh-keygen -f school -b 4096
+ssh-keygen -f school -b 4096 -N betty 
