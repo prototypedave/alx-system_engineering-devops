@@ -1,0 +1,3 @@
+#!/usr/bin/bash env
+#passes a new user with the command whoami
+sudo -u "$1" whoami
