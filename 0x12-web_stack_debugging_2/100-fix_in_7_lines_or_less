@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #same as run nginx as nginx but with 7 or less commands
-pkill -f apache2
+adduser -s /bin/nginx nginx
 chown nginx:nginx /etc/nginx/nginx.conf
 chmod 700 /etc/nginx/nginx.conf
 sed -i 's/80 default_seever/8080 default_server/' /etc/nginx/sites-available/default
